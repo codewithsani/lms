@@ -1,6 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 @import "tailwindcss";
 
-*{
-  font-family: Outfit;
+
+/* Global font */
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+@layer base {
+  :root {
+    /* Base default font */
+    --font-default-size: 0.9375rem;        /* 15px */
+    --font-default-line-height: 1.3125rem; /* 21px */
+
+    /* Course Details Headings */
+    --font-course-details-heading-small: 1.625rem;       /* 26px */
+    --line-course-details-heading-small: 2.25rem;        /* 36px */
+
+    --font-course-details-heading-large: 2.25rem;        /* 36px */
+    --line-course-details-heading-large: 2.75rem;        /* 44px */
+
+    /* Home Headings */
+    --font-home-heading-small: 2.75rem;    /* 44px */
+    --line-home-heading-small: 3.125rem;   /* 50px */
+
+    --font-home-heading-large: 3.5rem;       /* 56px */
+    --line-home-heading-large: 4.0rem;     /* 64px */
+  }
+}
+
+@layer components {
+  .text-default {
+    font-size: var(--font-default-size);
+    line-height: var(--font-default-line-height);
+  }
+
+  .text-course-details-heading-small {
+    font-size: var(--font-course-details-heading-small);
+    line-height: var(--line-course-details-heading-small);
+  }
+
+  .text-course-details-heading-large {
+    font-size: var(--font-course-details-heading-large);
+    line-height: var(--line-course-details-heading-large);
+  }
+
+  .text-home-heading-small {
+    font-size: var(--font-home-heading-small);
+    line-height: var(--line-home-heading-small);
+  }
+
+  .text-home-heading-large {
+    font-size: var(--font-home-heading-large);
+    line-height: var(--line-home-heading-large);
+  }
 }
