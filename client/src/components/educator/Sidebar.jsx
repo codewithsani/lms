@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { assets } from "../../assets/assets";
 import { AppContext } from "../../context/AppContext";
 
-const SideBar = () => {
+const Sidebar = () => {
   const { isEducator } = useContext(AppContext);
 
   const menuItems = [
@@ -46,4 +46,4 @@ const SideBar = () => {
   );
 };
 
-export default SideBar;
+export default Sidebar;
